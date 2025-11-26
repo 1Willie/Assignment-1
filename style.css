@@ -35,5 +35,6 @@ body {
   .wide,
   .narrow {
     grid-column: span 12;
-  }
+  } 
 }
+  
