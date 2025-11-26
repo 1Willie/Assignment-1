@@ -1,0 +1,39 @@
+:root {
+  --gap: 12px;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  padding: 20px;
+  background: #f7f9fc;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--gap);
+  align-items: start;
+}
+
+.box {
+  padding: 18px;
+  border-radius: 8px;
+  background: #dff0ff;
+  border: 1px solid #a3c7e6;
+  text-align: center;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+.wide {
+  grid-column: span 8;
+}
+
+.narrow {
+  grid-column: span 4;
+}
+
+@media (max-width: 600px) {
+  .wide,
+  .narrow {
+    grid-column: span 12;
+  }
+}
